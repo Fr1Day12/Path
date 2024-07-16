@@ -1,5 +1,5 @@
 import { GridType, SpeedType, TileType } from "../../../utils/types";
-import { horizontalDivision } from "./horizontalDevision";
+import { horizontalDivision } from "./horizontalDivision";
 import { verticalDivision } from "./verticalDivision";
 
 export default async function recursiveDivision({
@@ -20,7 +20,7 @@ export default async function recursiveDivision({
   col: number;
   height: number;
   width: number;
-  setIsDisabled: (isDisabled: boolean) => void;
+  setIsDisabled: (disabled: boolean) => void;
   speed: SpeedType;
 }) {
   if (height <= 1 || width <= 1) {
