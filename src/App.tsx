@@ -3,7 +3,7 @@ import Grid from "./components/Grid";
 import { PathFindingProvider } from "./context/PathFindingContext";
 import { SpeedProvider } from "./context/SpeedContext";
 import { TileProvider } from "./context/TileContext";
-import Nav from "./components/Nav";
+import { Nav } from "./components/Nav";
 
 export default function App() {
   const isValuelizationRunningRef = useRef(false);
@@ -12,7 +12,7 @@ export default function App() {
       <TileProvider>
         <SpeedProvider>
           <div className="h-screen w-screen flex flex-col">
-            <Nav />
+            <Nav isValuelizationRunningRef={isValuelizationRunningRef} />
             <Grid isValuelizationRunningRef={isValuelizationRunningRef} />
           </div>
         </SpeedProvider>
